@@ -11,6 +11,29 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# --- HIDE ALL BRANDING, LOGS, AND DEVELOPER TOOLS ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            
+            /* Hides the "Manage app" and "Deploy" buttons */
+            .stAppDeployButton {display: none;}
+            
+            /* Hides the Streamlit logo and status indicator at the bottom left */
+            [data-testid="stStatusWidget"] {display: none;}
+            
+            /* Removes the "Fork" and "GitHub" link decorations */
+            .viewerBadge_container__1QSob {display: none;}
+            .st-emotion-cache-zq5wre {display: none;}
+            
+            /* General fix to remove any remaining developer toolbars */
+            div[data-testid="stToolbar"] {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- CUSTOM STYLING ---
 st.markdown("""
     <style>
@@ -173,5 +196,6 @@ with tab2:
                         mime="application/pdf"
 
                     )
+
 
 
