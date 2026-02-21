@@ -11,6 +11,16 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# --- HIDE STREAMLIT BRANDING ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- CUSTOM STYLING ---
 st.markdown("""
     <style>
@@ -171,4 +181,5 @@ with tab2:
                         data=f,
                         file_name=f"Proposal_{prop_name}.pdf",
                         mime="application/pdf"
+
                     )
