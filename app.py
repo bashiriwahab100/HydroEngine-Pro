@@ -11,6 +11,20 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# --- HIDE STREAMLIT BRANDING AND DEVELOPER TOOLS ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            /* This targets the deployment/manage button in the bottom right */
+            .stAppDeployButton {display: none;}
+            /* This hides the "viewer" decorations at the bottom */
+            [data-testid="stStatusWidget"] {display: none;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- HIDE STREAMLIT BRANDING ---
 hide_st_style = """
             <style>
@@ -183,3 +197,4 @@ with tab2:
                         mime="application/pdf"
 
                     )
+
