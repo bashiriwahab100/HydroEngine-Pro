@@ -1,0 +1,111 @@
+[
+  {
+    "id": "phys_01", "name": "pH Level", "unit": "Scale",
+    "standards": [
+       { "authority": "NIS 554:2015", "max_limit": 8.5, "min_limit": 6.5, "consequence": "Corrosion (low) or Scale buildup (high).", "solution": "Neutralize with Lime or Acid Injection." },
+       { "authority": "WHO Guidelines", "max_limit": 8.5, "min_limit": 6.5, "consequence": "Affects taste and disinfection efficiency.", "solution": "pH adjustment required." }
+    ]
+  },
+  {
+    "id": "phys_02", "name": "Turbidity", "unit": "NTU",
+    "standards": [
+       { "authority": "NIS 554:2015", "max_limit": 5.0, "consequence": "Interferes with disinfection; aesthetically unpleasing.", "solution": "Coagulation, Flocculation, and Filtration." },
+       { "authority": "WHO Guidelines", "max_limit": 1.0, "consequence": "Shields bacteria from chlorine.", "solution": "Optimization of filtration process." }
+    ]
+  },
+  {
+    "id": "phys_03", "name": "Total Dissolved Solids (TDS)", "unit": "mg/L",
+    "standards": [
+       { "authority": "NIS 554:2015", "max_limit": 500, "consequence": "Salty taste; scale in pipes.", "solution": "Reverse Osmosis (RO)." },
+       { "authority": "WHO Guidelines", "max_limit": 1000, "consequence": "Gastrointestinal irritation; unpalatable.", "solution": "Desalination/RO." }
+    ]
+  },
+  {
+    "id": "phys_04", "name": "Conductivity", "unit": "µS/cm",
+    "standards": [
+       { "authority": "NIS 554:2015", "max_limit": 1000, "consequence": "Indicates high dissolved salts.", "solution": "Reverse Osmosis." }
+    ]
+  },
+  {
+    "id": "chem_01", "name": "Sulfate (SO4)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 100, "consequence": "Taste impairment; corrosion of concrete.", "solution": "Use PVC pipes or RO treatment." },
+      { "authority": "WHO Guidelines", "max_limit": 500, "consequence": "Laxative effect (diarrhea).", "solution": "Reverse Osmosis or Ion Exchange." }
+    ]
+  },
+  {
+    "id": "chem_02", "name": "Iron (Fe)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 0.3, "consequence": "Reddish-brown staining; metallic taste.", "solution": "Aeration followed by Filtration." },
+      { "authority": "WHO Guidelines", "max_limit": null, "consequence": "Aesthetic nuisance (staining).", "solution": "Oxidation and Filtration." }
+    ]
+  },
+  {
+    "id": "chem_03", "name": "Lead (Pb)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 0.01, "consequence": "CRITICAL: Neurotoxin; brain damage.", "solution": "Coagulation, RO, replace lead pipes." },
+      { "authority": "WHO Guidelines", "max_limit": 0.01, "consequence": "CRITICAL: Kidney damage, hypertension.", "solution": "Lead pipe replacement; pH control." }
+    ]
+  },
+  {
+    "id": "chem_04", "name": "Nitrate (NO3)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 50, "consequence": "Blue Baby Syndrome (Methemoglobinemia).", "solution": "Ion Exchange or RO." },
+      { "authority": "WHO Guidelines", "max_limit": 50, "consequence": "Indicates sewage/fertilizer runoff.", "solution": "Ion Exchange. DO NOT BOIL." }
+    ]
+  },
+  {
+    "id": "chem_05", "name": "Arsenic (As)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 0.01, "consequence": "Carcinogen (skin/lung cancer); skin lesions.", "solution": "Activated Alumina or Coagulation." },
+      { "authority": "WHO Guidelines", "max_limit": 0.01, "consequence": "Blackfoot disease; cancer.", "solution": "Adsorption filters." }
+    ]
+  },
+  {
+    "id": "chem_06", "name": "Fluoride (F)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 1.5, "consequence": "Dental fluorosis (brown teeth).", "solution": "Activated Alumina (Nalgonda Technique)." },
+      { "authority": "WHO Guidelines", "max_limit": 1.5, "consequence": "Skeletal fluorosis (bone damage).", "solution": "Reverse Osmosis." }
+    ]
+  },
+  {
+    "id": "chem_07", "name": "Copper (Cu)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 1.0, "consequence": "Gastrointestinal distress; liver damage.", "solution": "pH adjustment (reduce corrosivity)." },
+      { "authority": "WHO Guidelines", "max_limit": 2.0, "consequence": "Stomach upset; nausea.", "solution": "Pipe replacement; Ion Exchange." }
+    ]
+  },
+  {
+    "id": "chem_08", "name": "Manganese (Mn)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 0.2, "consequence": "Black stains on laundry; neurological effects.", "solution": "Chemical oxidation." },
+      { "authority": "WHO Guidelines", "max_limit": 0.4, "consequence": "Bitter taste; staining.", "solution": "Greensand filtration." }
+    ]
+  },
+  {
+    "id": "chem_09", "name": "Zinc (Zn)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 3.0, "consequence": "Astringent (greasy) taste; milky water.", "solution": "Ion Exchange." }
+    ]
+  },
+  {
+    "id": "chem_10", "name": "Total Hardness (CaCO3)", "unit": "mg/L",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 150, "consequence": "Scale formation; high soap consumption.", "solution": "Water Softening (Lime-Soda)." }
+    ]
+  },
+  {
+    "id": "bio_01", "name": "E. Coli", "unit": "CFU/100ml",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 0, "consequence": "FECAL CONTAMINATION: Cholera, Typhoid risk.", "solution": "Immediate Disinfection (Chlorine/UV)." },
+      { "authority": "WHO Guidelines", "max_limit": 0, "consequence": "Pathogenically unsafe.", "solution": "Disinfection." }
+    ]
+  },
+  {
+    "id": "bio_02", "name": "Total Coliforms", "unit": "CFU/100ml",
+    "standards": [
+      { "authority": "NIS 554:2015", "max_limit": 10, "consequence": "Indicates environmental contamination.", "solution": "Check system integrity; disinfect." },
+      { "authority": "WHO Guidelines", "max_limit": 0, "consequence": "Should not be present in treated water.", "solution": "Disinfection." }
+    ]
+  }
+]
