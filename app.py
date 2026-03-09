@@ -3,6 +3,9 @@ import os
 import pandas as pd  # Added for better table visualization
 from logic import analyze_batch, get_parameter_names, save_comprehensive_pdf, generate_proposal
 
+port = int(os.environ.get("PORT", 10000))
+app.run(host='0.0.0.0', port=port)
+
 # --- PAGE CONFIG ---
 st.set_page_config(
     page_title="HydroEngine Pro | Water Quality Suite", 
@@ -196,6 +199,7 @@ with tab2:
                         mime="application/pdf"
 
                     )
+
 
 
 
